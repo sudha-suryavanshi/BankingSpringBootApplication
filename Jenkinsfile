@@ -112,11 +112,15 @@ node {
         """
     }
 
-    stage('Verify Deployment') {
+        stage('Verify Deployment') {
         sleep 15
 
         sh """
             docker ps
+
+            echo "=== START OF CRASH LOGS ==="
+            docker logs ${containerName} || true
+            echo "=== END OF CRASH LOGS ==="
 
             curl -f http://localhost:${httpPort}/bank-api/swagger-ui.html
         """
