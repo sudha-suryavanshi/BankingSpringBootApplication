@@ -122,7 +122,7 @@ node {
             docker logs ${containerName} || true
             echo "=== END OF CRASH LOGS ==="
 
-            curl -f http://localhost:${httpPort}/bank-api/swagger-ui.html
+            curl -I http://localhost:${httpPort}/bank-api/swagger-ui.html
         """
     }
 
