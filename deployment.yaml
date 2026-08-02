@@ -16,10 +16,10 @@ spec:
     spec:
       containers:
       - name: springboot-app
-        image: sudha2809/bankingapp:latest
+        image: sudha2809/bankingapp:3.0
         imagePullPolicy: Always
         ports:
-        - containerPort: 8989
+        - containerPort: 8080
         resources:
           requests:
             cpu: "250m"
