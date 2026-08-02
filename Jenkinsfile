@@ -4,7 +4,7 @@ node {
     def dockerHubUser = "sudha2809"
     def containerName = "bankingapp"
     def httpPort = "8989"
-    def containerPort = "8080"
+    def containerPort = "8989"
 
     stage('Clean Workspace') {
         cleanWs()
