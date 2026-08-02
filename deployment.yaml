@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: springboot-app
-        image: anujsharma1990/bankingapp:latest
+        image: sudha2809/bankingapp:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 8989
